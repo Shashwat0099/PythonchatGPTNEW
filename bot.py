@@ -4,9 +4,9 @@ import requests
 import re
 
 # Your API ID and hash (Get this from https://my.telegram.org)
-api_id = 'YOUR_API_ID'
-api_hash = 'YOUR_API_HASH'
-bot_token = 'YOUR_BOT_TOKEN'
+api_id = '29270113'
+api_hash = '360fc41c046f221ed27f5ecfefea681f'
+bot_token = '7087096200:AAHT5vlpiBFjwQVredRNFeYVV0DYOOduCCo'
 
 # Create the bot and client
 bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
@@ -33,7 +33,7 @@ async def start(event):
             members = re.findall(r'@\w+', response.text)
 
             # Step 3: Add members to the group
-            group = await client.get_entity('https://t.me/your_group_link')
+            group = await client.get_entity('https://t.me/+wUoZkag5-EA4YTZl')
 
             for member in members:
                 try:
